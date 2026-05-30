@@ -297,7 +297,7 @@ export default function Home() {
           </div>
 
           {/* Scrollable cuisine cards */}
-          <div className="flex justify-between overflow-x-auto scrollbar-hide pb-3">
+          <div className="flex justify-between gap-4 overflow-x-auto scrollbar-hide pb-3">
             {cuisines.map((cuisine) => (
               <a
                 key={cuisine.id}
@@ -349,12 +349,12 @@ export default function Home() {
           {/* Relative wrapper for the scroll and floating button */}
           <div className="relative">
             {/* Scrollable restaurant cards row */}
-            <div className="flex gap-5 items-start overflow-x-auto scrollbar-hide pb-4 justify-between">
+            <div className="flex items-start justify-between overflow-x-auto scrollbar-hide pb-4">
               {restaurants.map((r) => (
                 <div
                   key={r.id}
                   id={`restaurant-card-${r.id}`}
-                  className="flex-shrink-0 w-[300px] bg-white rounded-2xl border border-[#f0f0f0] overflow-hidden hover:shadow-md transition-shadow group cursor-pointer"
+                  className="flex-shrink-0 min-w-[300px] bg-white rounded-2xl border border-[#f0f0f0] overflow-hidden hover:shadow-md transition-shadow group cursor-pointer"
                 >
                   {/* Card image */}
                   <div className="relative w-full h-[140px] bg-[#f9f9f9] overflow-hidden flex-shrink-0">
@@ -436,10 +436,10 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Floating Next Button */}
+            {/* Floating Next Button overlaid on last visible card */}
             <button
               id="restaurants-next-btn"
-              className="absolute right-[-60px] top-[123px] -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.12)] border border-[#f0f0f0] flex items-center justify-center hover:text-[#e8431a] hover:scale-105 transition-all text-[#1a1a1a] z-20 cursor-pointer"
+              className="absolute -right-14 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.15)] border border-[#f0f0f0] flex items-center justify-center hover:text-[#e8431a] hover:scale-105 hover:shadow-[0_4px_20px_rgba(232,67,26,0.2)] transition-all text-[#1a1a1a] z-20 cursor-pointer"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <polyline points="9 18 15 12 9 6" />
@@ -655,16 +655,16 @@ export default function Home() {
               }}
             />
             {/* Left text and button column positioned on top of the background image */}
-            <div className="relative z-20 p-5 flex flex-col justify-between h-full w-full">
+            <div className="relative z-20 p-5 py-7 flex flex-col justify-between h-full w-full">
               <div>
-                <h3 className="font-heading text-[15px] font-bold text-[#1a1a1a] tracking-tight leading-tight">Group Order Made Easy</h3>
-                <p className="font-heading text-[11px] font-semibold text-[#666] leading-snug mt-1 max-w-[130px]">
+                <h3 className="font-heading text-[14px] font-semibold text-[#1a1a1a] tracking-tight leading-tight">Group Order Made Easy</h3>
+                <p className="font-heading text-[12px] font-medium text-[#666] leading-snug mt-1 max-w-[130px]">
                   Perfect for offices, parties and events.
                 </p>
               </div>
               <button
                 id="group-order-cta"
-                className="px-3.5 py-2 bg-[#e8431a] hover:bg-[#c93610] text-white font-bold text-[10px] rounded-xl transition-all w-fit shadow-sm leading-none cursor-pointer"
+                className="px-3.5 py-2 bg-[#e8431a] hover:bg-[#c93610] text-white font-semibold text-[12px] rounded-lg transition-all w-fit shadow-sm leading-none cursor-pointer"
               >
                 Start a Group Order
               </button>
@@ -677,17 +677,15 @@ export default function Home() {
             className="rounded-2xl border border-[#f5edd7]/70 bg-[#fff9eb] flex h-[170px] justify-between overflow-hidden group hover:shadow-md transition-shadow duration-300"
           >
             {/* Left text column */}
-            <div className="flex-grow p-5 pr-1 flex flex-col justify-between z-10">
-              <div>
-                <h3 className="font-heading text-[15px] font-bold text-[#1a1a1a] tracking-tight leading-tight">Hutz Rewards</h3>
-                <p className="font-heading text-[11px] font-semibold text-[#666] leading-snug mt-1 max-w-[135px]">
+            <div className="flex-grow p-5 py-7 pr-1 flex flex-col justify-between z-10">
+                <h3 className="font-heading text-[14px] font-semibold text-[#1a1a1a] tracking-tight leading-tight">Hutz Rewards</h3>
+                <p className="font-heading text-[12px] font-medium text-[#666] leading-snug mt-1 max-w-[135px]">
                   Eat more. Earn more. Unlock perks and enjoy exclusive offers.
                 </p>
-              </div>
               <a
                 href="#"
                 id="rewards-cta"
-                className="text-[11px] font-bold text-[#e8431a] hover:underline flex items-center gap-1 cursor-pointer leading-none"
+                className="text-[12px] font-bold text-[#e8431a] hover:underline flex items-center gap-1 cursor-pointer leading-none"
               >
                 Join for Free
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -698,9 +696,9 @@ export default function Home() {
             {/* Right vector illustration column */}
             <div className="w-[110px] h-full flex-shrink-0 flex items-center justify-center pr-5 z-0">
               {/* Soft gold circle gradient */}
-              <div className="w-[74px] h-[74px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_16px_rgba(253,230,138,0.25)] relative">
+              <div className="w-[84px] h-[84px] rounded-full bg-white flex items-center justify-center shadow-[0_4px_16px_rgba(253,230,138,0.25)] relative">
                 {/* SVG gold crown */}
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="#eab308" className="drop-shadow-sm">
+                <svg width="70" height="70" viewBox="0 0 24 24" fill="#eab308" className="drop-shadow-sm">
                   <path d="M5 16L3.2 6.8c-.1-.6.5-1.1 1.1-.9L8.5 8.2l3-5.2c.3-.5 1.1-.5 1.4 0l3 5.2 4.2-2.3c.6-.3 1.2.2 1.1.9L19 16H5zm2.5 2c-.8 0-1.5.7-1.5 1.5s.7 1.5 1.5 1.5h9c.8 0 1.5-.7 1.5-1.5s-.7-1.5-1.5-1.5h-9z" />
                   <circle cx="3.2" cy="6.2" r="1.1" fill="#eab308" />
                   <circle cx="12" cy="2.5" r="1.1" fill="#eab308" />
@@ -778,7 +776,7 @@ export default function Home() {
               </div>
               <button
                 id="reorder-cta"
-                className="px-3.5 py-2 bg-white border border-[#ffccbc] hover:border-[#e8431a] hover:bg-[#fff5f2] text-[#e8431a] font-bold text-[12px] rounded-lg transition-all w-fit shadow-sm leading-none cursor-pointer"
+                className="px-3.5 py-2 bg-white border border-[#ffccbc] hover:border-[#e8431a] hover:bg-[#fff5f2] text-[#e8431a] font-semibold text-[12px] rounded-lg transition-all w-fit shadow-sm leading-none cursor-pointer"
               >
                 Reorder Now
               </button>
