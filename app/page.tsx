@@ -296,14 +296,14 @@ export default function Home() {
             </a>
           </div>
 
-          {/* Scrollable cuisine cards */}
-          <div className="flex justify-between gap-4 overflow-x-auto scrollbar-hide pb-3">
+          {/* Cuisine cards: scroll on mobile, grid on lg+ */}
+          <div className="flex gap-4 overflow-x-auto scrollbar-hide pb-3 lg:grid lg:grid-cols-7 lg:overflow-visible">
             {cuisines.map((cuisine) => (
               <a
                 key={cuisine.id}
                 id={`cuisine-${cuisine.id}`}
                 href="#"
-                className="flex flex-col w-[180px] h-[138px] rounded-2xl overflow-hidden bg-[#fdf5eb] border border-[#f3e4d0] flex-shrink-0 group hover:shadow-md hover:border-[#e8431a]/30 transition-all duration-300"
+                className="flex flex-col w-[140px] flex-shrink-0 lg:w-auto h-[138px] rounded-2xl overflow-hidden bg-[#fdf5eb] border border-[#f3e4d0] group hover:shadow-md hover:border-[#e8431a]/30 transition-all duration-300"
               >
                 <div className="w-full h-[98px] overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
