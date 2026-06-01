@@ -190,28 +190,28 @@ const rawTop10Items = [
     id: "item-1",
     restaurant: "ROOTS LEBANESE",
     name: "French Fries",
-    price: "$ 4.95",
+    price: "£ 4.95",
     image: "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&h=400&fit=crop&q=80"
   },
   {
     id: "item-2",
     restaurant: "THE GRILL HOUSE",
     name: "Gourmet Cheeseburger",
-    price: "$ 8.50",
+    price: "£ 8.50",
     image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=400&fit=crop&q=80"
   },
   {
     id: "item-3",
     restaurant: "PAPA PIZZA",
     name: "Pepperoni Pizza Slice",
-    price: "$ 3.25",
+    price: "£ 3.25",
     image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop&q=80"
   },
   {
     id: "item-4",
     restaurant: "SWEET TREATS",
     name: "Chocolate Cupcake",
-    price: "$ 2.99",
+    price: "£ 2.99",
     image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=400&fit=crop&q=80"
   }
 ];
@@ -222,7 +222,7 @@ const rawTopPicks = [
     name: "Suya & Grills",
     cuisine: "Nigerian",
     time: "30 - 45 min",
-    price: "$$",
+    price: "££",
     image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=400&fit=crop&q=80"
   },
   {
@@ -230,7 +230,7 @@ const rawTopPicks = [
     name: "Gourmet Pasta Bowl",
     cuisine: "Italian",
     time: "15 - 25 min",
-    price: "$$$",
+    price: "£££",
     image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600&h=400&fit=crop&q=80"
   },
   {
@@ -238,7 +238,7 @@ const rawTopPicks = [
     name: "Fresh Poke Bowls",
     cuisine: "Healthy · Seafood",
     time: "10 - 20 min",
-    price: "$$",
+    price: "££",
     image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop&q=80"
   }
 ];
@@ -284,7 +284,7 @@ function shuffle<T>(array: T[]): T[] {
 // Helpers to slightly vary values for true randomness
 const ratings = ["4.6", "4.7", "4.8", "4.9"];
 const times = ["20 - 30 mins", "25 - 35 mins", "30 - 45 mins"];
-const prices = ["$$", "$$$", "$$$$"];
+const prices = ["££", "£££", "££££"];
 
 export function getRawLocalRestaurants() {
   return shuffle(rawLocalRestaurants).map(item => ({
