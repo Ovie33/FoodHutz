@@ -9,7 +9,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-[#f0f0f0]">
-      <div className="max-w-[1280px] mx-auto px-6 py-10">
+      <div className="px-32 py-10">
 
         {/* ── Main 6-Column Footer Grid ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.8fr_0.9fr_0.9fr_1.8fr_1.1fr] gap-7 mb-10 items-start">
@@ -175,11 +175,11 @@ export default function Footer() {
         </div>
 
         {/* ── Bottom Bar ── */}
-        <div className="border-t border-[#f0f0f0] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-[#f0f0f0] pt-6 grid grid-cols-1 lg:grid-cols-[1.5fr_0.8fr_0.9fr_0.9fr_1.8fr_1.1fr] gap-7 items-center">
           <p className="text-[11px] font-semibold text-[#888]">© 2025 FoodHutz. All rights reserved.</p>
           
-          {/* Centered Privacy links with pipe separators */}
-          <div className="flex items-center gap-2.5 text-[11px] font-semibold text-[#888]">
+          {/* Privacy links aligned with Company column */}
+          <div className="flex items-center gap-2.5 text-[11px] font-semibold text-[#888] col-span-3">
             <a href="#" className="hover:text-[#e8431a] transition-colors">Terms &amp; Conditions</a>
             <span className="text-gray-200">|</span>
             <a href="#" className="hover:text-[#e8431a] transition-colors">Privacy Policy</a>
@@ -187,8 +187,8 @@ export default function Footer() {
             <a href="#" className="hover:text-[#e8431a] transition-colors">Refund Policy</a>
           </div>
 
-          {/* Right Selectors with pipe separators */}
-          <div className="flex items-center gap-2.5 text-[11px] font-semibold text-[#888]">
+          {/* Right Selectors aligned with last columns */}
+          <div className="flex items-center gap-2.5 text-[11px] font-semibold text-[#888] col-span-2 lg:justify-end">
             <button className="flex items-center gap-1 hover:text-[#e8431a] transition-colors cursor-pointer">
               Nigeria (NG)
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[#e5e5e5] ">
-      <div className="max-w-[1280px] mx-auto px-6 h-16 flex items-center gap-4">
+      <div className="px-32 h-16 flex items-center gap-4">
 
         {/* ── Logo ── */}
         <a href="/" className="flex-shrink-0 mr-4 flex items-center">
@@ -37,7 +37,7 @@ export default function Navbar() {
         </button>
 
         {/* ── Search Bar ── */}
-        <div className="flex-1 max-w-[400px] relative">
+        <div className="flex-1 max-w-[560px] relative">
           <svg
             className="absolute left-3 top-1/2 -translate-y-1/2 text-[#999]"
             width="16" height="16" viewBox="0 0 24 24" fill="none"
