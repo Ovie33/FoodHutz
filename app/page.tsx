@@ -70,7 +70,7 @@ export default function Home() {
         />
 
         {/* Content Container */}
-        <div className="w-full px-4 lg:px-40 py-6 relative z-20 grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 items-center">
+        <div className="w-full px-4 lg:px-16 xl:px-40 py-6 relative z-20 grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6 items-center">
           {/* Left Column: Text + Search Card + Stats */}
           <div className="relative max-w-[520px]">
             <h1 className="font-heading text-[42px] lg:text-[46px] font-extrabold leading-[1.1] text-[#1a1a1a] mb-0 tracking-tight">
@@ -238,7 +238,7 @@ export default function Home() {
 
       {/*  Food Moments Section  */}
       <section className="bg-white py-3 mt-6 items-center">
-        <div className="px-4 lg:px-40">
+        <div className="px-4 lg:px-16 xl:px-40">
           <div className="flex items-center gap-8 justify-between">
             <h2 className="font-heading text-[16px] font-bold text-[#1a1a1a] leading-tight flex-shrink-0 max-w-[120px]">
               What&apos;s your food moment?
@@ -280,7 +280,7 @@ export default function Home() {
 
       {/* ═══ 3. Explore Cuisines Section ═══ */}
       <section className="bg-white py-5">
-        <div className="px-4 lg:px-40">
+        <div className="px-4 lg:px-16 xl:px-40">
           {/* Section header */}
           <div className="flex items-center justify-between mb-6">
             <h2 className="font-heading text-[16px] font-bold text-[#1a1a1a]">Explore cuisines</h2>
@@ -327,7 +327,7 @@ export default function Home() {
 
       {/* ═══ 4. Featured in Lagos Section ═══ */}
       <section className="bg-white py-5">
-        <div className="px-4 lg:px-40">
+        <div className="px-4 lg:px-16 xl:px-40">
           {/* Section header */}
           <div className="flex items-start gap-3 justify-between mb-4">
             <div>
@@ -354,7 +354,7 @@ export default function Home() {
                 <div
                   key={r.id}
                   id={`restaurant-card-${r.id}`}
-                  className="flex-shrink-0 min-w-[325px] bg-white rounded-2xl border border-[#f0f0f0] overflow-hidden hover:shadow-md transition-shadow group cursor-pointer"
+                  className="flex-shrink-0 max-w-[325px] bg-white rounded-2xl border border-[#f0f0f0] overflow-hidden hover:shadow-md transition-shadow group cursor-pointer"
                 >
                   {/* Card image */}
                   <div className="relative w-full h-[140px] bg-[#f9f9f9] overflow-hidden flex-shrink-0">
@@ -451,7 +451,7 @@ export default function Home() {
 
       {/* Explore your Area Section */}
       <section className="bg-white py-5">
-        <div className="px-4 lg:px-40 grid grid-cols-1 lg:grid-cols-[1.75fr_1fr] gap-5 items-start">
+        <div className="px-4 lg:px-16 xl:px-40 grid grid-cols-1 lg:grid-cols-[1.75fr_1fr] gap-5 items-start">
           <div className="rounded-2xl border border-[#f0f0f0] bg-[#fdf6ec] overflow-hidden flex h-[210px] w-full flex-col sm:flex-row">
             
             {/* Left Beige Text & Tags Column */}
@@ -631,7 +631,7 @@ export default function Home() {
 
       {/* ═══ 6. Promo Cards Section ═══ */}
       <section className="bg-white py-8">
-        <div className="px-4 lg:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="px-4 lg:px-16 xl:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           
           {/* Card 1: Group Order Made Easy */}
           <div
@@ -799,7 +799,7 @@ export default function Home() {
 
       {/* ═══ 7. Local Restaurants Near You ═══ */}
       <section className="bg-white py-6">
-        <div className="px-4 lg:px-40">
+        <div className="px-4 lg:px-16 xl:px-40">
           <div className="mb-4">
             <h2 className="font-heading text-[18px] font-bold text-[#1a1a1a] tracking-tight">Local Restaurants Near You</h2>
             <p className="font-heading text-[12px] text-[#888] font-medium mt-0.5">Ordering from just around the corner</p>
@@ -846,7 +846,7 @@ export default function Home() {
 
       {/* ═══ 8. Top 10 Items of the Day ═══ */}
       <section className="bg-white py-6">
-        <div className="px-4 lg:px-40">
+        <div className="px-4 lg:px-16 xl:px-40">
           <div className="mb-4">
             <h2 className="font-heading text-[18px] font-bold text-[#1a1a1a] tracking-tight">Top 10 items of the day</h2>
             <p className="font-heading text-[12px] text-[#888] font-medium mt-0.5">Today&apos;s most-ordered dishes across the city</p>
@@ -897,7 +897,7 @@ export default function Home() {
 
       {/* ═══ 9. Top Picks in Your Neighbourhood ═══ */}
       <section className="bg-white py-6">
-        <div className="px-4 lg:px-40">
+        <div className="px-4 lg:px-16 xl:px-40">
           <div className="mb-4">
             <h2 className="font-heading text-[18px] font-bold text-[#1a1a1a] tracking-tight">Top picks in your neighbourhood</h2>
             <p className="font-heading text-[12px] text-[#888] font-medium mt-0.5">Handpicked favourites close to you</p>
@@ -931,7 +931,7 @@ export default function Home() {
 
       {/* ═══ 10. Reserve Your Table Banner ═══ */}
       <section className="bg-white py-6">
-        <div className="px-4 lg:px-40">
+        <div className="px-4 lg:px-16 xl:px-40">
           <div className="relative h-[200px] rounded-2xl overflow-hidden bg-cover bg-center">
             <img
               src="/images/reserve-banner.png"
@@ -964,7 +964,7 @@ export default function Home() {
 
       {/* ═══ 11. Top Reservation Spots in Your Area ═══ */}
       <section className="bg-white py-6">
-        <div className="px-4 lg:px-40">
+        <div className="px-4 lg:px-16 xl:px-40">
           <div className="mb-4">
             <h2 className="font-heading text-[18px] font-bold text-[#1a1a1a] tracking-tight">Top Reservation spots in your area</h2>
             <p className="font-heading text-[12px] text-[#888] font-medium mt-0.5">Book your next dining experience</p>
