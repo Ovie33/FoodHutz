@@ -9,7 +9,7 @@ const footerLinks = {
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-[#f0f0f0]">
-      <div className="px-4 lg:px-32 py-10">
+      <div className="px-4 lg:px-12 xl:px-32 py-10">
 
         {/* ── Main 6-Column Footer Grid ── */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.5fr_0.8fr_0.9fr_0.9fr_1.8fr_1.1fr] gap-7 mb-10 items-start">

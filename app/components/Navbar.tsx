@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-[#e5e5e5]">
-      <div className="px-4 md:px-32 h-16 flex items-center gap-4">
+      <div className="px-4 lg:px-12 xl:px-32 h-16 flex items-center gap-4">
 
         {/* ── Logo ── */}
         <a href="/" className="flex-shrink-0 mr-2 md:mr-4 flex items-center">
