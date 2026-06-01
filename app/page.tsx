@@ -354,7 +354,7 @@ export default function Home() {
                 <div
                   key={r.id}
                   id={`restaurant-card-${r.id}`}
-                  className="flex-shrink-0 max-w-[325px] lg:min-w-[300px] bg-white rounded-2xl border border-[#f0f0f0] overflow-hidden hover:shadow-md transition-shadow group cursor-pointer"
+                  className="flex-shrink-0 max-w-[325px] lg:min-w-[280px] bg-white rounded-2xl border border-[#f0f0f0] overflow-hidden hover:shadow-md transition-shadow group cursor-pointer"
                 >
                   {/* Card image */}
                   <div className="relative w-full h-[140px] bg-[#f9f9f9] overflow-hidden flex-shrink-0">
