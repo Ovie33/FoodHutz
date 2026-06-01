@@ -348,13 +348,13 @@ export default function Home() {
 
           {/* Relative wrapper for the scroll and floating button */}
           <div className="relative">
-            {/* Scrollable restaurant cards row */}
-            <div className="flex items-start gap-4 lg:justify-between overflow-x-auto scrollbar-hide pb-4">
+            {/* Restaurant cards: scroll on mobile, grid on lg+ */}
+            <div className="flex gap-4 overflow-x-auto scrollbar-hide pb-4 lg:grid lg:grid-cols-4 lg:overflow-visible">
               {restaurants.map((r) => (
                 <div
                   key={r.id}
                   id={`restaurant-card-${r.id}`}
-                  className="flex-shrink-0 max-w-[325px] lg:min-w-[280px] bg-white rounded-2xl border border-[#f0f0f0] overflow-hidden hover:shadow-md transition-shadow group cursor-pointer"
+                  className="w-[280px] flex-shrink-0 lg:w-auto bg-white rounded-2xl border border-[#f0f0f0] overflow-hidden hover:shadow-md transition-shadow group cursor-pointer"
                 >
                   {/* Card image */}
                   <div className="relative w-full h-[140px] bg-[#f9f9f9] overflow-hidden flex-shrink-0">
